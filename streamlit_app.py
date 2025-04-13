@@ -12,6 +12,16 @@ git push origin main
     """
 )
 
+try:
+    with open("Test_streamlit.txt", "r") as file:  # Remplacez "example.txt" par le nom de votre fichier
+        lines = file.readlines()
+        st.write("Contenu du fichier texte :")
+        for line in lines:
+            st.text(line.strip())  # Affiche chaque ligne sans les espaces inutiles
+except FileNotFoundError:
+    st.error("Le fichier 'example.txt' est introuvable. Veuillez l'ajouter au répertoire du projet.")
+
+
 if st.button("Send balloons!"):
     st.balloons()
 
