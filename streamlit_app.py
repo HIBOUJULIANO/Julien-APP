@@ -21,7 +21,7 @@ st.pydeck_chart(pdk.Deck(
         latitude=48.85,
         longitude=2.333333,
         zoom=50,
-        pitch=20,
+        pitch=100,
     ),
 layers=[
   pdk.Layer(
@@ -32,6 +32,7 @@ layers=[
                
             ],
             get_color='[200, 30, 0, 160]',
-            get_radius=5        ),
+            get_radius=100,      
+              ),
 ],
     ))
