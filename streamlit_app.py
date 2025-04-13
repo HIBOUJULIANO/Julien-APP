@@ -32,7 +32,7 @@ layers=[
                
             ],
             get_color='[200, 30, 0, 160]',
-            get_radius=100,      
+            get_radius=1,      
               ),
 ],
     ))
