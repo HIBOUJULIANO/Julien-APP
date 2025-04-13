@@ -5,7 +5,8 @@ import pydeck as pdk
 st.title("Hello World 👋")
 st.markdown(
     """ 
-    git add streamlit_app.py
+
+git add streamlit_app.py
 git commit -m "Mise à jour de l'application Streamlit"
 git push origin main
     """
