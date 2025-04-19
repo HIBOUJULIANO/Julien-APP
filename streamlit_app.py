@@ -5,7 +5,7 @@ import streamlit as st
 st.markdown(
     """ 
    My name is Julien Hoarau and I create little funny
-   game with Python
+   games with Python
     """
 )
 
