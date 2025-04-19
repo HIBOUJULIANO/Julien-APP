@@ -2,6 +2,12 @@ import random
 import time
 import streamlit as st
 
+st.markdown(
+    """ 
+   My name is Julien Hoarau and I create little funny
+   game with Python
+    """
+)
 
 st.title("Casino of the emojis")
 st.markdown(
