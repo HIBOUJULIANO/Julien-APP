@@ -14,7 +14,7 @@ st.markdown(
     """ 
    Hello, welcome to the Casino of the emojis.
    In this virtual casino you can win virtual emojis if you have 
-   4 same emojis
+   4 similar emojis
     """
 )
 
