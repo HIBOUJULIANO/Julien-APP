@@ -1,48 +1,91 @@
+import random 
+import time
 import streamlit as st
-import pydeck as pdk
 
 
-st.title("Hello World 👋")
+st.title("Casino of the emojis")
 st.markdown(
     """ 
-
-git add streamlit_app.py
-git commit -m "Mise à jour de l'application Streamlit"
-git push origin main
+   Hello, welcome to the Casino of the emojis.
+   In this virtual casino you can win virtual emojis if you have 
+   4 same emojis
     """
 )
 
-try:
-    with open("Test_streamlit.txt", "r") as file:  # Remplacez "example.txt" par le nom de votre fichier
-        lines = file.readlines()
-        st.write("Contenu du fichier texte :")
-        for line in lines:
-            st.text(line.strip())  # Affiche chaque ligne sans les espaces inutiles
-except FileNotFoundError:
-    st.error("Le fichier 'example.txt' est introuvable. Veuillez l'ajouter au répertoire du projet.")
+defilementA=0
+defilementB=0
+defilementC=0
+defilementD=0
+
+A = 0
+B = 0
+C = 0
+D = 0
+#print(A,B,C)
+
+a=0
+b=0
+c=0
+d=0
+
+combia = []
+
+tirage = 0
 
 
-if st.button("Send balloons!"):
-    st.balloons()
+e=1
+t=0
+bontirage=random.randint(0,3)
+f=0
 
-st.pydeck_chart(pdk.Deck(
-    map_style=None,
-    initial_view_state=pdk.ViewState(
-        latitude=48.85,
-        longitude=2.333333,
-        zoom=50,
-        pitch=500,
-    ),
-layers=[
-  pdk.Layer(
-            'ScatterplotLayer',
-            
-            data=[
-                {'position': [2.333333, 48.85], 'size': 1},
-               
-            ],
-            get_color='[200, 30, 0, 160]',
-            get_radius=1,      
-              ),
-],
-    ))
+
+#print("bontirage",bontirage)
+
+
+
+if st.button("Play"):
+    
+    
+   
+        i=0
+        while i < 5 : 
+            i=i+1
+            time.sleep(0.8)
+            defilementA=random.choice(["❤️","😊","😘","😍"])
+            defilementB=random.choice(["❤️","😊","😘","😍"])
+            defilementC=random.choice(["❤️","😊","😘","😍"])
+            defilementD=random.choice(["❤️","😊","😘","😍"])
+            st.write(defilementA,defilementB,defilementC,defilementD)
+
+        while a < 4 : 
+            a=a+1
+            time.sleep(0.2)
+            A=random.choice(["❤️","😊","😘","😍"])
+            #st.write(A)
+
+    
+        while b < 4 : 
+            b=b+1
+            time.sleep(0.2)
+            B=random.choice(["❤️","😊","😘","😍"])
+            #st.write(B)
+    
+        while c < 4 : 
+            c=c+1
+            time.sleep(0.2)
+            C=random.choice(["❤️","😊","😘","😍"])
+            #st.write(C)
+    
+        while d < 4 :
+            d=d+1
+            time.sleep(0.2)
+            D=random.choice(["❤️","😊","😘","😍"])
+            #st.write(D)
+
+        st.write("Your emojis :" + A,B,C,D)
+        if A==B==C==D :
+         st.title("You win !"+random.choice(["🏎️","🛩️","⛴️","🏠"]))
+        else : 
+         st.title("You loose but you win a" +random.choice(["💩","🚛","⛈️","🎃"]))
+
+        
