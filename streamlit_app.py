@@ -5,7 +5,7 @@ import streamlit as st
 st.markdown(
     """ 
    My name is Julien Hoarau and I create little funny
-   games with Python
+   games with Python in order to test librairies
     """
 )
 
@@ -90,8 +90,8 @@ if st.button("Play"):
 
         st.write("Your emojis :" + A,B,C,D)
         if A==B==C==D :
-         st.title("You win !"+random.choice(["🏎️","🛩️","⛴️","🏠"]))
+         st.title("You win an emoji !"+random.choice(["🏎️","🛩️","⛴️","🏠"]))
         else : 
-         st.title("You loose but you win a" +random.choice(["💩","🚛","⛈️","🎃"]))
+         st.title("You loose but you win an emoji" +random.choice(["🤡","🚛","⛈️","🎃"]))
 
         
