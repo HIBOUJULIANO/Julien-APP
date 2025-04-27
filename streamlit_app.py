@@ -4,7 +4,7 @@ import streamlit as st
 
 st.markdown(
     """ 
-   My name is Julien Hoarau and I create little funny
+   test My name is Julien Hoarau and I create little funny
    games with Python in order to test librairies
     """
 )
@@ -94,4 +94,4 @@ if st.button("Play"):
         else : 
          st.title("You loose but you win an emoji" +random.choice(["🤡","🚛","⛈️","🎃"]))
 
-      st.image("Einstein.jpg", caption="Einstein image")  
+st.image("Einstein.jpg", caption="Einstein image")  
