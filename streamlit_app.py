@@ -113,5 +113,5 @@ if st.button("Play"):
          st.title("You loose but you win an emoji" +random.choice(["🤡","🚛","⛈️","🎃"]))
 
 fichier = open("Test_streamlit.txt", "r")
-print fichier.read()
+prist.write(fichier.read())
 fichier.close()
