@@ -2,7 +2,20 @@ import random
 import time
 import streamlit as st
 
+st.markdown(
+    """ 
+   test My name is Julien Hoarau and I create little funny
+   games with Python in order to test librairies
 
+
+
+
+
+
+
+   
+    """
+)
 
 st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHg2dmpjODdneHV5cW5hYm14MWUyeG83dDcycm91YXNhbzd2a3NnNSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/TFmEOTKS49wkn4Qeos/giphy.gif", caption="Einstein image")  
   
