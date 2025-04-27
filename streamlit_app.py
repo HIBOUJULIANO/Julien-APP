@@ -115,3 +115,7 @@ if st.button("Play"):
 fichier = open("Test_streamlit.txt", "r")
 st.write(fichier.read())
 fichier.close()
+time.sleep(1)
+fichier = open("fichier = open("Test_streamlit.txt", "w")
+fichier.write("...........                    🍎")
+fichier.close()
