@@ -2,6 +2,7 @@ import random
 import time
 import streamlit as st
 
+st.image("https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif", caption="Einstein image")  
 st.markdown(
     """ 
    test My name is Julien Hoarau and I create little funny
@@ -94,4 +95,4 @@ if st.button("Play"):
         else : 
          st.title("You loose but you win an emoji" +random.choice(["🤡","🚛","⛈️","🎃"]))
 
-st.image("Einstein.jpg", caption="Einstein image")  
+st.image("https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif", caption="Einstein image")  
