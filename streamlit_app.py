@@ -94,4 +94,4 @@ if st.button("Play"):
         else : 
          st.title("You loose but you win an emoji" +random.choice(["🤡","🚛","⛈️","🎃"]))
 
-        
+      st.image("Einstein.jpg", caption="Einstein image")  
