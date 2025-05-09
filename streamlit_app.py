@@ -15,7 +15,7 @@ df = pd.read_csv(url)
 
 resultat = df['Name']
 st.write(resultat)
-
+st.write(resultat)
 
 
 
