@@ -9,7 +9,7 @@ url = "https://www.julien-hoarau.com/Aribnb.csv"
 # Lire le fichier CSV depuis l'URL
 df = pd.read_csv(url)
 
-st.title ("Recherche dans une base de donnée")
+st.title ("Recherches croisées dans une base de donnée")
 st.write ("select your Neighbourhood")
 options = ['Popincourt', 'Reuilly', 'Louvre']
 choixquartier = st.selectbox("👤 Neighbourhood:", options)
