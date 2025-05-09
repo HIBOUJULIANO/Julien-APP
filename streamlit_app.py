@@ -14,7 +14,7 @@ df = pd.read_csv(url)
 #st.dataframe(df)
 recherche = df[df['id'] == 1]['name']
 resultat = df['name']
-st.write(resultat)
+st.write(recherche)
 st.write(resultat)
 
 
