@@ -9,11 +9,11 @@ url = "https://www.julien-hoarau.com/Aribnb.csv"
 # Lire le fichier CSV depuis l'URL
 df = pd.read_csv(url)
 
-st.write (Afficher les premières lignes du fichier)
+st.write ("Afficher les premières lignes du fichier")
 st.dataframe(df)
-st.write (Afficher une colonne) 
+st.write ("Afficher une colonne") 
 resultat = df['name']
-st.write (Afficher un prix supérieur à une valeur) 
+st.write ("Afficher un prix supérieur à une valeur") 
 prix = df[df['price'] > 100]
 st.write(recherche)
 st.write(resultat)
