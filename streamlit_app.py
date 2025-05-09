@@ -1,6 +1,21 @@
 import random 
 import time
 import streamlit as st
+import pandas as pd
+
+# Remplace par l'URL de ton fichier CSV
+url = "https://www.julien-hoarau.com/Aribnb.csv"
+
+# Lire le fichier CSV depuis l'URL
+df = pd.read_csv(url)
+
+# Afficher les premières lignes du fichier
+st.dataframe(df)
+
+
+
+
+
 
 st.markdown(
     """ 
