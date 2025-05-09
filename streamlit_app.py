@@ -9,6 +9,23 @@ url = "https://www.julien-hoarau.com/Aribnb.csv"
 # Lire le fichier CSV depuis l'URL
 df = pd.read_csv(url)
 
+st.title (Recherche dans une base de donnée)
+st.write ("select your Neighbourhood")
+options = ['Popincourt', 'Reuilly', 'Louvre']
+choixquartier = st.selectbox("👤 Neighbourhood:", options)
+
+st.write ("select your maximum price")
+maxprice = [80, 100, 500]
+choixprix = st.selectbox("👤 Price:", maxprice)
+
+if st.button("Chercher"):
+    resultatderecherche = df[
+        (df['price'] <= choixprix) & 
+        (df['neighbourhood'] == choixquartier)
+    ]
+    st.write("Search Results:")
+    st.dataframe(resultatderecherche)
+
 st.write ("Afficher les premières lignes du fichier")
 st.dataframe(df)
 
