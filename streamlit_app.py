@@ -13,7 +13,7 @@ df = pd.read_csv(url)
 # Afficher les premières lignes du fichier
 #st.dataframe(df)
 
-resultat = df[df['ID'] == 1]['Name']
+resultat = df['Name']
 st.write(resultat)
 
 
