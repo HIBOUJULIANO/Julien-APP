@@ -11,7 +11,7 @@ url = "https://www.julien-hoarau.com/Aribnb.csv"
 df = pd.read_csv(url)
 
 # Afficher les premières lignes du fichier
-#st.dataframe(df)
+st.dataframe(df)
 recherche = df[df['id'] == 3]['name']
 resultat = df['name']
 prix = df[df['price'] > 100]
