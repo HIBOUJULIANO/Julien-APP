@@ -12,7 +12,7 @@ df = pd.read_csv(url)
 
 # Afficher les premières lignes du fichier
 #st.dataframe(df)
-resultat = df[df['id'] == 1]['name']
+recherche = df[df['id'] == 1]['name']
 resultat = df['name']
 st.write(resultat)
 
