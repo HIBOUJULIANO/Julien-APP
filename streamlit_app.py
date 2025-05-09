@@ -14,14 +14,19 @@ st.dataframe(df)
 
 st.write ("select your Neighbourhood")
 options = ['Popincourt', 'Reuilly', 'Louvre']
-choix = st.selectbox("👤 Neighbourhood:", options)
+choixquartier = st.selectbox("👤 Neighbourhood:", options)
 
 st.write ("select your maximum price")
 maxprice = [80, 100, 500]
-choix = st.selectbox("👤 Price:", maxprice)
+choixprix = st.selectbox("👤 Price:", maxprice)
 
 if st.button("Chercher"):
-    resultatderecherche = df[(df['price'] <= maxprice) & (df['neighbourhood'].isin(options))]
+    resultatderecherche = df[
+        (df['price'] <= choixprix) & 
+        (df['neighbourhood'] == choixquartier)
+    ]
+    st.write("Search Results:")
+    st.dataframe(resultatderecherche)
 
 st.write ("Afficher une colonne") 
 resultat = df['name']
