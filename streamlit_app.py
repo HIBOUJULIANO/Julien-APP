@@ -17,7 +17,7 @@ options = ['Popincourt', 'Reuilly', 'Louvre']
 choix = st.selectbox("👤 Neighbourhood:", options)
 
 st.write ("select your maximum price")
-maxprice = ['80', '100', '150']
+maxprice = ['80', '100', '500']
 choix = st.selectbox("👤 Price:", maxprice)
 
 if st.button("Chercher"):
