@@ -18,7 +18,7 @@ choix = st.selectbox("👤 Neighbourhood:", options)
 
 st.write ("select your maximum price")
 maxprice = ['80', '100', '150']
-choix = st.selectbox("👤 Price:", options)
+choix = st.selectbox("👤 Price:", maxprice)
 
 st.write ("Afficher une colonne") 
 resultat = df['name']
