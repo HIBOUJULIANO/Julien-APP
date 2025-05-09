@@ -2,7 +2,7 @@ import random
 import time
 import streamlit as st
 import pandas as pd
-import pandasql as ps
+
 
 # Remplace par l'URL de ton fichier CSV
 url = "https://www.julien-hoarau.com/Aribnb.csv"
