@@ -14,8 +14,10 @@ df = pd.read_csv(url)
 #st.dataframe(df)
 recherche = df[df['id'] == 3]['name']
 resultat = df['name']
+prix = df[df['price'] > 100]
 st.write(recherche)
 st.write(resultat)
+st.write(prix)
 
 
 
