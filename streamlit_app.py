@@ -18,9 +18,11 @@ st.write ("select your maximum price")
 maxprice = [80, 100, 500]
 choixprix = st.selectbox("👤 Price:", maxprice)
 
+maxprice = st.slider("Prix maximal (€)", min_value=100, max_value=200, value=500, step=10)
+
 if st.button("Chercher"):
     resultatderecherche = df[
-        (df['price'] <= choixprix) & 
+        (df['price'] <= maxprice) & 
         (df['neighbourhood'] == choixquartier)
     ]
     st.write("Search Results:")
