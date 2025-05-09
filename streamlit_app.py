@@ -12,8 +12,13 @@ df = pd.read_csv(url)
 st.write ("Afficher les premières lignes du fichier")
 st.dataframe(df)
 
+st.write ("select your Neighbourhood")
 options = ['Popincourt', 'Reuilly', 'Louvre']
 choix = st.selectbox("👤 Neighbourhood:", options)
+
+st.write ("select your maximum price")
+maxprice = ['80', '100', '150']
+choix = st.selectbox("👤 Price:", options)
 
 st.write ("Afficher une colonne") 
 resultat = df['name']
