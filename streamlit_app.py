@@ -20,12 +20,15 @@ st.write ("select your maximum price")
 maxprice = ['80', '100', '150']
 choix = st.selectbox("👤 Price:", maxprice)
 
+if st.button("Chercher"):
+    resulatderecherche = df[df['price'] < maxprice] and df[df['neighbourhood'] < options]
+
 st.write ("Afficher une colonne") 
 resultat = df['name']
 st.write(resultat)
 
 st.write ("Afficher un prix supérieur à une valeur") 
-prix = df[df['price'] > 100]
+prix = df[df['price'] < 100]
 st.write(prix)
 
 
