@@ -12,6 +12,9 @@ df = pd.read_csv(url)
 st.write ("Afficher les premières lignes du fichier")
 st.dataframe(df)
 
+options = ['Popincourt', 'Reuilly', 'Louvre']
+choix = st.selectbox("👤 Neighbourhood:", options)
+
 st.write ("Afficher une colonne") 
 resultat = df['name']
 st.write(resultat)
