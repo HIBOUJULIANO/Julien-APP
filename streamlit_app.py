@@ -11,12 +11,13 @@ df = pd.read_csv(url)
 
 st.write ("Afficher les premières lignes du fichier")
 st.dataframe(df)
+
 st.write ("Afficher une colonne") 
 resultat = df['name']
+st.write(resultat)
+
 st.write ("Afficher un prix supérieur à une valeur") 
 prix = df[df['price'] > 100]
-st.write(recherche)
-st.write(resultat)
 st.write(prix)
 
 
