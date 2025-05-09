@@ -21,7 +21,7 @@ maxprice = ['80', '100', '500']
 choix = st.selectbox("👤 Price:", maxprice)
 
 if st.button("Chercher"):
-    resultatderecherche = df[(df['price'] < maxprice) & (df['neighbourhood'] == options)]
+    resultatderecherche = df[(df['price'] <= maxprice) & (df['neighbourhood'] == options)]
 
 st.write ("Afficher une colonne") 
 resultat = df['name']
