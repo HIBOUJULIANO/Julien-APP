@@ -4,22 +4,26 @@ import streamlit as st
 import pandas as pd
 
 
-# Remplace par l'URL de ton fichier CSV
+# CSV File
 url = "https://www.julien-hoarau.com/Aribnb.csv"
-# Lire le fichier CSV depuis l'URL
+
+# CSV Read
 df = pd.read_csv(url)
 
-st.title ("Recherches croisées dans une base de données")
+# Select box for the area
+st.title ("Cross lookupon the database")
 st.write ("select your Neighbourhood")
 options = ['Popincourt', 'Reuilly', 'Louvre']
 choixquartier = st.selectbox("👤 Neighbourhood:", options)
 
+# Select Maximum Price 
 st.write ("select your maximum price")
 maxprice = [80, 100, 500]
 choixprix = st.selectbox("👤 Price:", maxprice)
-
+# Slider
 maxprice = st.slider("Prix maximal (€)", min_value=100, max_value=200, value=500, step=10)
 
+# Panda Button
 if st.button("Chercher"):
     resultatderecherche = df[
         (df['price'] <= maxprice) & 
@@ -27,6 +31,18 @@ if st.button("Chercher"):
     ]
     st.write("Search Results:")
     st.dataframe(resultatderecherche)
+
+
+
+
+
+
+
+
+
+
+
+
 
 st.write ("Afficher les premières lignes du fichier")
 st.dataframe(df)
