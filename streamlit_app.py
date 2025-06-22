@@ -11,7 +11,7 @@ url = "https://www.julien-hoarau.com/Aribnb.csv"
 df = pd.read_csv(url)
 
 # Select box for the area
-st.title ("Cross lookupon the database")
+st.title ("Cross lookup on a database")
 st.write ("select your Neighbourhood")
 options = ['Popincourt', 'Reuilly', 'Louvre']
 choixquartier = st.selectbox("👤 Neighbourhood:", options)
@@ -23,7 +23,7 @@ choixprix = st.selectbox("👤 Price:", maxprice)
 # Slider
 maxprice = st.slider("Prix maximal (€)", min_value=100, max_value=200, value=500, step=10)
 
-# Panda Button
+# Panda Button Filter
 if st.button("Chercher"):
     resultatderecherche = df[
         (df['price'] <= maxprice) & 
